@@ -1,0 +1,28 @@
+{% extends 'manager/base/base.html' %}
+
+{% block title %}Админка - главная{% endblock title %}
+
+{% block bread_head %}{% endblock bread_head %}
+
+{% block content %}
+    <h1>Admin - page</h1>
+
+    <div class="list-txt">
+        <ul>
+            <li>point 1</li>
+            <li>point 2</li>
+            <li>point 3</li>
+            <li>point 4</li>
+            <li>point 5</li>
+        </ul>
+    </div>
+
+{% endblock %}
+
+{% block css %}
+    {{ block.super }}
+{% endblock css %}
+
+{% block js_footer %}
+    {{ block.super }}
+{% endblock js_footer %}

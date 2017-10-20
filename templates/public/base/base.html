@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock title %}</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="/static/assets/scripts/csrf-token.js"></script>
+
+    {% block css %}{% endblock css %}
+</head>
+<body>
+{% block bread_head %}{% endblock bread_head %}
+
+{% block content %}{% endblock content %}
+
+{% block js_footer %}
+    <script src="/static/assets/scripts/script.js"></script>
+{% endblock js_footer %}
+</body>
+</html>

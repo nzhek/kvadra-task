@@ -1,0 +1,22 @@
+{% extends 'public/base/base.html' %}
+
+{% block title %}Главная{% endblock title %}
+
+{% block bread_head %}{% endblock bread_head %}
+
+{% block content %}
+    <div class="wrap-message"></div>
+    <form name="form_txt">
+        <input type="text" name="txt" placeholder="Enter txt"/>
+        <button type="submit">Send</button>
+    </form>
+{% endblock content %}
+
+
+{% block css %}
+    {{ block.super }}
+{% endblock css %}
+
+{% block js_footer %}
+    {{ block.super }}
+{% endblock js_footer %}
